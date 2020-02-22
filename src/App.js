@@ -1,27 +1,43 @@
-import React from 'react';
-import javascript from './javascript.png';
-import './App.css';
+import React from "react";
+import "./App.css";
+import HarryPotter from "./img/HarryPotter.jpg";
+import Aladdin from "./img/Aladdin.jpg";
+import captainMarvel from "./img/captainMarvel.jpg";
+import fantasticBeasts from "./img/fantasticBeasts.jpg";
+import joker from "./img/joker.jpg";
+import titanic from "./img/titanic.jpg";
 
 class App extends React.Component {
   render() {
-    return(
+    return (
       <div className="App">
-      
-        <img src={javascript} className="JSlogo" alt="logo" />
-        <br /> <br /> <br />
-        <div className='container'>
-          <div className='item'>Harry Potter</div>
-          <div className='item'>Captain Marvel</div>
-          <div className='item'>Aladdin</div>
+        <div className="container">
+          <div className="item">
+            <img src={HarryPotter} alt="Harry Potter Image" />
+          </div>
+          <div className="item">
+            <img src={captainMarvel} alt="Harry Potter Image" />
+          </div>
+          <div className="item">
+            <img src={Aladdin} alt="Harry Potter Image" />
+  
+          </div>
         </div>
-
-        <div className='container'>
-          <div className='item'>Fantastic Beasts</div>
-          <div className='item'>Joker</div>
-          <div className='item'>Titanic</div>
+        <div className="container">
+          <div className="item">
+            <img src={fantasticBeasts} alt="Harry Potter Image" />
+             
+          </div>
+          <div className="item">
+            <img src={joker} alt="Harry Potter Image" />
+            
+          </div>
+          <div className="item">
+            <img src={titanic} alt="Harry Potter Image" />
+            
+          </div>
         </div>
-     
-    </div>
+      </div>
     );
   }
 }
