@@ -13,7 +13,27 @@ img {
 
 .item {
   flex: 1;
-  padding: 20px;
+  padding: 0;
+  border: 1px solid pink;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  /* display: none; */
+  transition: bottom ease 1s;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: skyblue;
+  opacity: 0.5;
+  bottom: -100px;
+}
+
+.item:hover .overlay {
+  /* display: block; */
+  opacity: .6;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
