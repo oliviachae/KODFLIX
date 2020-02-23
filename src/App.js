@@ -1,19 +1,21 @@
 import React from "react";
 import "./App.css";
-import Movies from "./Movies";
-import Gallery from './Gallery';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Gallery from "./Gallery";
+import Details from "./Details";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Gallery />
-      </div>
+      <Router>
+        <div className="App">
+          <Route exact path='/' component={Gallery} />
+          <Route exact path='/:details' component={Details} />
+        </div>
+      </Router>
     );
   }
 }
-
 
 
 export default App;
