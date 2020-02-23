@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Movies from './Movies';
 import HarryPotter from "./img/HarryPotter.jpg";
 import Aladdin from "./img/Aladdin.jpg";
 import captainMarvel from "./img/captainMarvel.jpg";
@@ -12,49 +13,23 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
-          <div className="item">
-            <img src={HarryPotter} alt="Harry Potter Image" />
-            <div className='overlay'>
-              <h1>Harry Potter</h1>
-              </div>
-          </div>
-          <div className="item">
-            <img src={captainMarvel} alt="Captain Marvel Image" />
-            <div className='overlay'>
-              <h1>Captain Marvel</h1>
-              </div>
-          </div>
-          <div className="item">
-            <img src={Aladdin} alt="Aladdin Image" />
-            <div className='overlay'>
-              <h1>Aladdin</h1>
-              </div>
-          </div>
+        <Movies name="Harry Potter" img={HarryPotter} />
+        <Movies name="Captain Marvel" img={captainMarvel} />
+        <Movies name="Aladdin" img={Aladdin} />
         </div>
-      
         <div className="container">
-          <div className="item">
-            <img src={fantasticBeasts} alt="Fantastic Beasts Image" />
-            <div className='overlay'>
-              <h1>Fantastic Beasts</h1>
-              </div>
-          </div>
-          <div className="item">
-            <img src={joker} alt="joker Image" />
-            <div className='overlay'>
-              <h1>joker</h1>
-              </div>
-          </div>
-          <div className="item">
-            <img src={titanic} alt="Titanic Image" />
-            <div className='overlay'>
-              <h1>Titanic</h1>
-              </div>
-          </div>
-        </div>
+        <Movies name="Fantastic Beasts" img={fantasticBeasts} />
+        <Movies name="Joker" img={joker} />
+        <Movies name="Titanic" img={titanic} />
+        </div>  
+        
       </div>
+      
     );
   }
-}
+} 
+
+
+
 
 export default App;
