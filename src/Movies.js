@@ -6,7 +6,7 @@ export default function Movies(props) {
     <Link to ={`/${props.id}`} className="item">
       <img src={props.img} alt={`${props.name} logo`} />
       <div className="overlay">
-        <h1>{props.name}</h1>
+        <h2>{props.name}</h2>
       </div>
     </Link>
     );

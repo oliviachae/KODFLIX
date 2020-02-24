@@ -5,13 +5,17 @@ export default class Details extends React.Component {
     constructor() {
         super();
         this.state = {
-            welcomeMessage: 'Welcome to the details page!'
-        }
+            welcomeMessage: 'Hello, this will be the details page for each Movie & TV show :)'
+        };
     }
 
     componentDidMount() {
-        
+        setTimeout(() => {
+            this.setState(
+                {welcomeMessage: 'Coming soon! :)'})
+        }, 3000);
     }
+
     render() {
         return(
             <div>
