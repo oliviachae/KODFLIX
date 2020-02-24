@@ -1,0 +1,25 @@
+.Details {
+    
+}
+.Details .content {
+    display: flex;
+}
+.Details .content .text {
+    padding: 15px;
+}
+.Details .content .detailsImg {
+    width: 20%;
+    height: 25%;
+    padding: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Details .content {
+        flex-direction: column;
+    }
+
+    .Details .content .detailsImg {
+        width: 50%;
+        margin-left: 130px;
+    }
+}
