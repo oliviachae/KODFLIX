@@ -15,3 +15,5 @@ export default function getMovies() {
       { id: "Titanic", name: "Titanic", img: titanic, details: "Titanic is a 1997 American epic romance and disaster film directed, written, co-produced, and co-edited by James Cameron. Incorporating both historical and fictionalized aspects, the film is based on accounts of the sinking of the RMS Titanic, and stars Leonardo DiCaprio and Kate Winslet as members of different social classes who fall in love aboard the ship during its ill-fated maiden voyage." }
     ];
   }
+
+  
