@@ -15,6 +15,16 @@ export default class Details extends React.Component {
     let movieId = this.props.match.params.movieId;
     let movies = getMovies().find(movies => movies.id === movieId);
     this.setState({ movies });
+
+    fetch('/rest/movie')
+        .then(response => {
+          console.log(response)
+          return response.json()})
+        .then(movie => {
+          console.log(movie)
+          this.setState({ movieList: movie});
+        })
+          
   }
 
   render() {

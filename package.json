@@ -15,7 +15,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start-all": "npm-run-all -p start-frontend start-backend",
+    "start": "npm-run-all -s build start-backend",
+    "start-dev": "npm-run-all -p start-frontend start-backend",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon ./src/backend/app.js",
     "build": "react-scripts build",
@@ -36,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
