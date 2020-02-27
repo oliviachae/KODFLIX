@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import getMovies from "../getMovies";
 import "./Details.css";
 
 export default class Details extends React.Component {

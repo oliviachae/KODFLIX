@@ -1,6 +1,6 @@
 import React from "react";
 import Movie from "./Movies";
-import getMovies from './getMovies';
+
 
 
 export default class Gallery extends React.Component {
@@ -22,7 +22,6 @@ export default class Gallery extends React.Component {
           
   }
   render() {
-    console.log(this.state.movieList)
     return (
     <div>
       <div className="container">
