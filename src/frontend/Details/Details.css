@@ -1,6 +1,14 @@
 .Details {
-    
+  background-color: black;  
+  height: 100vh;
+  color: white;
 }
+
+.Details h1 {
+    margin: 0;
+    padding: 20px;
+}
+
 .Details .content {
     display: flex;
 }

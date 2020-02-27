@@ -4,7 +4,7 @@ const port = process.env.PORT || 3001;
 const movieList = require('./movieList')
 const path = require('path')
 
-app.get('/rest/movie', (req, res) => res.send(movieList))
+app.get('/rest/movies', (req, res) => res.send(movieList))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
